@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MainLayout from "./(landing)/_components/layout/mainLayout";
 
 export const metadata: Metadata = {
   title: "Digikala Clone",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa">
-      <body>{children}</body>
+      <body>
+        <MainLayout>{children}</MainLayout>
+      </body>
     </html>
   );
 }
